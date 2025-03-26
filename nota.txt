@@ -1,0 +1,38 @@
+Algoritmo sin_titulo
+	Definir notas Como Real
+	Definir i Como Entero
+	Definir suma, nota_media, nota_maxima, nota_minima Como Real
+	
+	Dimension notas[5]
+	
+	Escribir "Introduce las 5 notas del alumno (entre 0 y 10):"
+	
+	Para i <- 1 Hasta 5 Hacer
+		Repetir
+			Escribir "Nota ", i, ": "
+			Leer notas[i]
+		Hasta Que notas[i] >= 0 Y notas[i] <= 10
+	FinPara
+	
+	suma <- 0
+	nota_maxima <- notas[1]
+	nota_minima <- notas[1]
+	
+	Para i <- 1 Hasta 5 Hacer
+		suma <- suma + notas[i]
+		
+		Si notas[i] > nota_maxima Entonces
+			nota_maxima <- notas[i]
+		FinSi
+		
+		Si notas[i] < nota_minima Entonces
+			nota_minima <- notas[i]
+		FinSi
+	FinPara
+	
+	nota_media <- suma / 5
+	
+	Escribir "Nota media: ", nota_media
+	Escribir "Nota máxima: ", nota_maxima
+	Escribir "Nota mínima: ", nota_minima
+FinAlgoritmo
