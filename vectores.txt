@@ -1,0 +1,35 @@
+Algoritmo sin_titulo
+	
+	
+	// crear un vector de 5 elementos de cadenas de caracteres; inicializa el vector con datos leidos por el teclado
+	// copia los elemntos del vector en otro vector pero en orden inverso, y muestralos en la pantalla
+	
+	
+    Definir vector1, vector2 Como Caracter
+    Dimension vector1[5], vector2[5]
+    
+    Definir i Como Entero
+    
+    Escribir "Introducir 5 cadenas de caracter :"
+	
+	
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Elemento ", i , ": "
+        Leer vector1[i]
+	FinPara
+    
+    Para i <- 1 Hasta 5 Hacer
+        vector2[i] <- vector1[6-i]
+    FinPara
+    
+    Escribir "Vector original:"
+    Para i <- 1 Hasta 5 Hacer
+        Escribir vector1[i]
+    FinPara
+    
+    Escribir "Vector invertido:"
+    Para i <- 1 Hasta 5 Hacer
+        Escribir vector2[i]
+    FinPara
+	
+FinAlgoritmo
