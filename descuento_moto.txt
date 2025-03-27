@@ -1,0 +1,35 @@
+Algoritmo sin_titulo
+	  //Una distribuidora de motocicletas tiene una promoción de fin de año que consiste en lo siguiente. 
+	  //Las motos marca Honda tienen un descuento del 5%, las marcas Yamaha del 8% y las Suzuki del 10%, las otras marcas 2%.
+	  //Se debe mostrar el precio de la moto, el descuento y el precio a pagar.
+		definir marca Como Caracter
+		definir p_original, descuento, p_final Como Real
+		
+		escribir "INGRESAR LA MARCA DE LA MOTO: "
+		leer marca
+		marca <- Mayusculas(marca) 
+		
+		escribir "INGRESAR EL PRECIO DE LA MOTO: "
+		leer p_original
+		
+		descuento <- 0 
+		
+		Segun marca Hacer
+			"HONDA":
+				descuento <- p_original * 0.05
+			"YAMAHA":
+				descuento <- p_original * 0.08
+			"SUSUKI":
+				descuento <- p_original * 0.10
+			De Otro Modo:
+				descuento <- p_original * 0.02
+				
+		Fin Segun
+		
+		p_final <- p_original - descuento
+		
+		escribir "MARCA DE LA MOTO : " marca
+		escribir "PRECIO DE LA MOTO A COMPRAR : " p_original
+		escribir "DESCUENTO : " descuento
+		escribir "PRECIO TOTAL A PAGAR : " p_final
+FinAlgoritmo
