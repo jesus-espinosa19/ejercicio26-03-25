@@ -1,0 +1,23 @@
+Algoritmo sin_titulo
+	
+	//un cliente va a comprar una moto y se percata que si lo compraba el dia martes tiene un descuento del 12%
+	//luego si lo compra el dia sabado tiene un descuento del 18% y si es feriado un 25%, mostrar cuanto pagara en cada opcion.
+	
+	
+	definir p_original Como Real
+	definir p_martes, p_sabado, p_feriado Como Real
+	
+	escribir "digite el precio total de la moto: "
+	leer p_original
+	
+	p_martes <- p_original-(p_original * 0.12)
+	p_sabado  <- p_original-(p_original * 0.18)
+	p_feriado  <- p_original-(p_original * 0.25)
+	
+	escribir "DESCUENTO DIA MARTES 12% "
+	escribir "total a pagar con descuento : " p_martes
+	escribir "DESCUENTO DIA SABADO 18% "
+	escribir "total a pagar con descuento  : " p_sabado
+	escribir "DESCUENTO DIA FERIADO 25% "
+	escribir "total a pagar con descuento  :" p_feriado 
+FinAlgoritmo

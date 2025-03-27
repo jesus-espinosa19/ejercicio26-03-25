@@ -1,0 +1,36 @@
+Algoritmo sin_titulo
+	//crear un algoritmo que muestre el nombre del cliente y la compra de llantas, si la cantidad de llantas
+	//comprado es menor de 12, al precio de las llantas compradas se le hara un descuento del 20%, sabiendo 
+	//que el costo de la llanta es 250 soles por unidad, y si el numero de llantas compradas es mayor de 12, el precio
+	//de llantas se reduce a 220 por unidad y el descuento sera de 25%
+	
+	definir nombre_cliente Como Caracter
+	definir com_llantas Como Entero
+	definir precio, p_total, p_descuento, descuento Como Real
+	
+	escribir "digite el nombre del cliente: "
+	leer nombre_cliente
+	
+	escribir "digite la cantidad de llantas compradas : "
+	leer com_llantas
+	
+	si com_llantas <= 12 Entonces
+		precio <- 250
+		descuento <- 0.20
+	SiNo
+		precio <- 220
+		descuento <- 0.25
+	FinSi
+	
+	p_total <- com_llantas * precio
+	p_descuento <- p_total - (p_total * descuento)
+	
+	escribir "CLIENTE : " nombre_cliente
+	escribir "PRECIO POR LLANTA : " precio 
+	escribir "PRECIO TOTAL DE LA COMPRA  : " p_total 
+	escribir "DESCUENTO : " p_total * descuento
+	escribir "PRECIO TOTAL A PAGAR  : " p_descuento
+	
+	
+	
+FinAlgoritmo
